@@ -1,0 +1,75 @@
+/* ignition72 Base */
+*,
+* * {
+	margin:0;
+	padding:0;
+	position:relative;
+	box-sizing: border-box;
+}
+
+/*	ensure HTML5 elements are handled as block level on older browsers */
+footer,
+header,
+nav,
+main,
+section {
+	display: block;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 1rem;
+    background-color:#ccc;
+}
+
+main {
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#peel-path {
+    width: 650px;
+    height: 900px;
+    margin: 20px auto 100px;
+}
+
+#magazine{
+	width:650px;
+	height:900px;
+    margin: 20px auto 100px;
+}
+
+#magazine .turn-page{
+	background-color:#ccc;
+}
+
+#magazine {
+    .page {
+        &.one {
+            background-color: #333;
+        }
+        &.two {
+            background-color: #72e9eb;
+        }
+    }
+}
